@@ -1,0 +1,34 @@
+<!-- Auteur: Amoesi Kewan -->
+<html>
+
+<head>
+  <title>portfolio/projet/tri par sélection</title>
+</head>
+
+<body>
+
+  <h4>Tri par sélection</h4>
+  <p>Ce projet propose une simulation interactive pour visualiser le processus de tri par sélection d'un tableau.</p>
+  <p>Dans cette simulation, vous pouvez choisir la taille du tableau, initialiser les valeurs aléatoires, et observer le
+    tri par sélection en action.</p>
+  <p>Utilisez les boutons pour contrôler la simulation : recommencer, faire un pas, continuer, ou réinitialiser. Vous
+    pouvez également obtenir de l'aide sur le fonctionnement de la simulation.</p>
+  <p>Malheureusement, je n'ai pas réussi à faire en sorte que le premier élément soit correctement sélectionné.</p>
+  <div>
+    <canvas id="simulation" width="1500" height="600" style="border: 1px solid black;">
+    </canvas><br>
+    <label><input id="taille_tableau" type="number" min="1" max="20" value="10">Taille du Tableau</label><br>
+    <button id="recommmencer">Recommencer</button><br>
+    <button id="initialiser">Réinitialisation de la simulation</button><br>
+    <button id="un_pas">Faire un pas</button><br>
+    <button id="continuer">Continuer la simulation</button><br>
+    <button id="stop">Stopper la simulation</button><br>
+    <button id="aide">Aide</button>
+  </div>
+  <script src="dist/projet_3.js" defer></script>
+
+  <a href="../projets.html" class="lien">[Retour aux projets]</a>
+  <a href="../index.html" class="lien">[Page d'accueil]</a>
+</body>
+
+</html>

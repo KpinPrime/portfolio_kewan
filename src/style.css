@@ -1,0 +1,186 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 2rem;
+  background-color: rgb(255, 255, 255);
+  
+}
+header {
+  border: 2px solid rgb(93, 187, 150);
+  background-color: #00ca8e;
+  box-shadow: 0 2px 5px rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  padding: 3rem;
+  border-radius: 8px;
+  text-align: center;
+  
+
+}
+main {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+/*styledes section sauf les titres des pas */
+section {
+  background-color: rgb(0, 202, 142);
+  color:  rgb(255, 255, 255);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: auto ;
+  box-shadow: 0 2px 5px rgb(0, 0, 0);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-right: 10px;
+  margin-top: 10px;
+  font-family:   Open , sans-serif;   
+  font-size: 1.5rem;      
+  padding: 1rem 2rem; 
+  text-decoration: none;
+  
+
+}
+
+.lien{/*style detout les class "lien"*/
+  background-color: rgb(0, 202, 142);
+  border: 2px solid rgb(93, 187, 150);
+  color:  rgb(255, 255, 255);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;/*arrondire les bordure de chaque section*/
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgb(0, 0, 0);/*l'effet ombre*/
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-right: 10px;
+  font-family:  Arial, sans-serif;   /* hérite de la police définie dans body/header */
+  font-size: 1.5rem;      /* agrandit la taille du texte dans le bouton */
+  padding: 1rem 2rem; 
+  text-decoration: none;/*je retire le surlignage*/
+
+}
+
+.lien_projet{/*style detout les class "lien_projet"*/
+  background-color: rgb(0, 202, 142);
+  border: 2px solid rgb(93, 187, 150);
+  color:  rgb(255, 255, 255);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgb(0, 0, 0);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  font-family:  Arial, sans-serif; 
+  font-size: 15px;    
+  padding: 0.5rem 2rem; 
+  text-decoration: none;
+
+}
+
+
+
+button#themeBtn{/*style du bouton de changementde thème (margin-bottom: 20px;) */
+  display: flex;/* pour pouvoir utiliser margin-left*/
+  margin-left: auto;
+  margin-bottom: 20px;
+  background-color: rgb(0, 202, 142);
+  border: 2px solid rgb(93, 187, 150);
+  color:  rgb(255, 255, 255);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;/*arrondire les bordure de chaque section*/
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-shadow: 0 2px 5px rgb(0, 0, 0);
+  font-family:  Arial, sans-serif;
+  
+}
+
+
+
+/*hover pour le bouton changement de thème*/
+button#themeBtn:hover {
+  background-color: rgb(255, 255, 255);
+  color: #186445ff;
+}
+.lien:hover {
+  background-color: rgb(255, 255, 255);
+  color: #186445ff;
+}
+/*hover pour les liens de projet*/
+.lien_projet:hover {
+  background-color: rgb(255, 255, 255);
+  color: #186445ff;
+}
+
+
+
+
+
+body,
+header,
+button,
+section {
+  transition: all 0.4s ease;
+}
+.tab {
+  display:grid;
+  grid-template-columns: repeat(2,1fr);/*2 colonne de taille egale */
+  
+}
+.tab section {
+  background-color: rgb(0, 202, 142);
+  color:  rgb(255, 255, 255);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: auto ;
+  box-shadow: 0 2px 5px rgb(0, 0, 0);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-right: 10px;
+  font-family:   Open , sans-serif;   
+  font-size: 1.5rem;      
+  padding: 1rem 2rem; 
+  text-decoration: none;
+  
+
+}
+
+
+
+/*---------------------------------------------------------------------------------------*/
+/* THÈME SOMBRE*/
+body.dark-theme {
+  background-color: #00ca8e; 
+  color: #186445ff; /
+}
+
+body.dark-theme header {
+  background-color: white;
+  color: #186445ff;
+}
+body.dark-theme section {
+  background-color: white;
+  color:  #186445ff; 
+}
+
+body.dark-theme .lien {
+  background-color: white;
+  color: #186445ff;
+}
+body.dark-theme .lien:hover {
+  background-color: #00ca8e;
+  color: white;
+}
+body.dark-theme .lien_projet {
+  background-color: white;
+  color: #186445ff;
+}
+body.dark-theme .lien_projet:hover {
+  background-color: #00ca8e;
+  color: white;
+}
+
+body.dark-theme button#themeBtn {
+  background-color: white;
+  color: #186445ff;
+}
+body.dark-theme button#themeBtn:hover {
+  background-color: #00ca8e;
+  color: white;
+}
